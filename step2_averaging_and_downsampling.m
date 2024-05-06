@@ -8,8 +8,8 @@ subjects = dir(base_path);
 subjects = subjects([subjects.isdir] & ~ismember({subjects.name}, {'.', '..'}));
 
 %electrodes of interest:
-%Cz==105  E7==6 E106==89 E13==11 E6==6 E112==94
-electrodes = [105, 6, 89, 11, 6, 94];  
+%Cz==105  E7==6 E106==89 E13==11 E6==5 E112==94
+electrodes = [105, 6, 89, 11, 5, 94];  
 
 for i = 1:length(subjects)
     subject_id = subjects(i).name;
